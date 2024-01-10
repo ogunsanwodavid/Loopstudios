@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----------Important meta tags----------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Frontend Mentor Challenge to build Loopstudios landing page">
+    <meta property="og:description" content="Junior Frontend Mentor Challenge to build Loopstudios landing page">
+    <meta name="author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:image" content="https://github.com/ogunsanwodavid/FYLO/assets/images/favicon-32x32.png">
+    <meta property="og:title" content="Loopstudios">
+
+    <!-----------Title---------->
+    <title>Loopstudios</title>
+
+    <!------------Favicon------------->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-------Linked stylesheets, fonts, icons and libraries------------>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!----------Fontawesome icons---------->
+
+    
+    <!--------Google Fonts----------->
+    
+
+    <!--Added Styles-->
+    <style>
+        @font-face {
+            font-family: 'Alata';
+            src: url('./assets/fonts/Alata/Alata-Regular.ttf') format('truetype'),
+            url('./assets/fonts/Alata/OFL.txt') format('woff')
+        }
+
+        @font-face {
+            font-family: 'Josefin Sans';
+            src: url('./assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype'),
+            url('./assets/fonts/Josefin_Sans/OFL.txt') format('woff')
+        }
+
+        header{
+            background-image: url(./assets/images/mobile/image-hero.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .creation{
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .creation-1{
+            background-image: url(./assets/images/mobile/image-deep-earth.jpg);
+        }
+
+        .creation-2{
+            background-image: url(./assets/images/mobile/image-night-arcade.jpg);
+        }
+
+        .creation-3{
+            background-image: url(./assets/images/mobile/image-soccer-team.jpg);
+        }
+
+        .creation-4{
+            background-image: url(./assets/images/mobile/image-grid.jpg);
+        }
+        
+        .creation-5{
+            background-image: url(./assets/images/mobile/image-from-above.jpg);
+        }
+
+        .creation-6{
+            background-image: url(./assets/images/mobile/image-pocket-borealis.jpg);
+        }
+
+        .creation-7{
+            background-image: url(./assets/images/mobile/image-curiosity.jpg);
+        }
+
+        .creation-8{
+            background-image: url(./assets/images/mobile/image-fisheye.jpg);
+        }
+
+        @media (min-width: 520px) {
+            header{
+                background-image: url(./assets/images/desktop/image-hero.jpg);
+            }
+
+            .creation-1{
+                background-image: url(./assets/images/desktop/image-deep-earth.jpg);
+            }
+
+            .creation-2{
+                background-image: url(./assets/images/desktop/image-night-arcade.jpg);
+            }
+
+            .creation-3{
+                background-image: url(./assets/images/desktop/image-soccer-team.jpg);
+            }
+
+            .creation-4{
+                background-image: url(./assets/images/desktop/image-grid.jpg);
+            }
+            
+            .creation-5{
+                background-image: url(./assets/images/desktop/image-from-above.jpg);
+            }
+
+            .creation-6{
+                background-image: url(./assets/images/desktop/image-pocket-borealis.jpg);
+            }
+
+            .creation-7{
+                background-image: url(./assets/images/desktop/image-curiosity.jpg);
+            }
+
+            .creation-8{
+                background-image: url(./assets/images/desktop/image-fisheye.jpg);
+            }
+        }
+    </style>
+
+</head>
+<body class="relative">
+    <header class="relative flex flex-col w-full h-max px-8 py-12 sm:px-14 md:px-[10%]">
+        <nav class="w-full flex items-center justify-between">
+            <img src="./assets/images/logo.svg" alt="" class="logo h-6 md:h-7">
+            <img src="./assets/images/icon-hamburger.svg" alt="" class="h-5 sm:hidden" id="hamburger">
+
+            <div class="hidden text-white text-sm font-alata space-x-4 sm:flex md:text-base md:space-x-6">
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>About</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Careers</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Events</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Products</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Support</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="w-full border-2 p-4 border-white mt-20 mb-32 uppercase text-[2rem] text-white font-josefin-sans font-[300] text-wrap break-words sm:w-[60%] sm:leading-none sm:mb-20 sm:text-[2.3rem] md:w-[500px] md:text-[3.5rem]" style="letter-spacing:0.2rem">
+            Immersive experiences that deliver
+        </div>
+    </header>
+
+    <section class="relative w-full bg-white flex flex-col px-8 py-10 sm:px-14 sm:py-20 md:px-[10%] md:py-0 md:my-20">
+        <img src="./assets/images/mobile/image-interactive.jpg" alt="" class="w-full max-h-[313px] sm:hidden">
+        <img src="./assets/images/desktop/image-interactive.jpg" alt="" class="hidden w-full sm:block sm:max-h-[440px] sm:max-w-[660px] sm:mx-auto md:h-auto md:w-[60%] md:mx-0">
+
+        
+        <div class="w-full flex flex-col px-4 pt-8 pb-4 space-y-5 md:absolute md:bottom-0 md:right-0 md:pl-14 md:pt-14 md:pr-0 md:pb-0 md:space-y-0 md:w-[50%] md:h-[60%] md:-translate-x-[10%] md:bg-white md:justify-end">
+            <h2 class="font-josefin-sans font-[300] text-3xl text-wrap text-center text-black uppercase sm:text-4xl md:text-left md:text-3xl">The leader in interactive VR</h2>
+            <p class="font-josefin-sans text-base text-dark-gray text-center sm:text-lg md:text-left md:text-base md:mt-4">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+            projects for some of the best companies around the globe. Our award-winning 
+            creations have transformed businesses through digital experiences that bind 
+            to their brand.</p>
+        </div>
+    </section>
+
+    <section class="w-full bg-white flex flex-col px-8 py-5 sm:px-14 md:px-[10%]">
+        <div class="w-full flex items-center justify-between sm:my-5">
+            <h2 class="font-josefin-sans font-[300] text-3xl text-wrap text-center text-black uppercase mb-10 sm:mb-0 sm:text-4xl"> Our creations</h2>
+
+            <button class="hidden w-[150px] h-max border-black border-2 px-5 py-2 text-black text-sm font-alata font-[400] sm:block md:hover:bg-black md:hover:text-white cursor-pointer" style="letter-spacing: 0.2rem;">
+                SEE ALL
+            </button>
+        </div>
+
+        <div class="w-full flex flex-col space-y-6 sm:flex-row sm:space-y-0 sm:gap-3 sm:flex-wrap sm:justify-between sm:mt-10 sm:mb-24 md:gap-5">
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-1 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>DEEP</h3>
+                    <h3>EARTH</h3>
+                </div>
+            </div>
+
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-2 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>NIGHT</h3>
+                    <h3>ARCADE</h3>
+                </div>
+            </div>
+
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-3 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>SOCCER</h3>
+                    <h3>TEAM VR</h3>
+                </div>
+            </div>
+            
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-4 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>THE</h3>
+                    <h3>GRID</h3>
+                </div>
+            </div>
+
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-5 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>FROM UP</h3>
+                    <h3>ABOVE VR</h3>
+                </div>
+            </div>
+    
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-6 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>POCKET</h3>
+                    <h3>BOREALIS</h3>
+                </div>
+            </div>
+
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-7 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>THE</h3>
+                    <h3>CURIOSITY</h3>
+                </div>
+            </div>
+
+            <div class="relative group flex w-full h-[100px] p-3 creation creation-8 sm:w-[23%] sm:h-[250px] md:p-5 md:h-[380px] cursor-pointer">
+                <div class="hidden absolute top-0 left-0 h-full w-full bg-[hsla(0,0%,100%,0.5)] group-hover:block"></div>
+
+                <div class="mt-auto w-full flex flex-col font-[300] font-josefin-sans text-white text-xl z-10  group-hover:text-black">
+                    <h3>MAKE IT</h3>
+                    <h3>FISH EYE</h3>
+                </div>
+            </div>
+        </div>
+
+        <button class="w-3/5 h-max mt-8 mb-20 mx-auto border-black border-2 px-5 py-2 text-black text-sm font-alata font-[400] sm:hidden" style="letter-spacing: 0.2rem;">
+            SEE ALL
+        </button>
+    </section>
+
+    <footer class="w-full flex flex-col items-center bg-black px-8 pt-11 pb-16 sm:px-14 md:px-[10%] md:flex-row">
+        <div class="w-full flex flex-col items-center md:items-start md:space-y-5">
+            <img src="./assets/images/logo.svg" alt="#" class="logo h-6 md:h-7">
+
+            <div class="w-full flex flex-col space-y-4 my-5 items-center text-white text-base font-alata font-[400] md:my-0 md:flex-row md:space-y-0 md:space-x-4 md:items-start">
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>About</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Careers</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Events</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Products</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+                <div class="group flex flex-col items-center cursor-pointer">
+                    <div>Support</div>
+                    <div class="opacity-0 h-[2px] w-[30%] bg-white mt-1 group-hover:opacity-100"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col items-center md:items-end md:space-y-5">
+            <div class="w-full flex items-center justify-center space-x-3 my-6 md:justify-end md:my-0 md:space-x-5">
+                <img src="./assets/images/icon-facebook.svg" alt="" class="h-7 md:pb-1 md:border-b-2 md:border-b-transparent md:hover:border-b-white cursor-pointer">
+                <img src="./assets/images/icon-twitter.svg" alt="" class="h-7 md:pb-1 md:border-b-2 md:border-b-transparent md:hover:border-b-white cursor-pointer">
+                <img src="./assets/images/icon-pinterest.svg" alt="" class="h-7 md:pb-1 md:border-b-2 md:border-b-transparent md:hover:border-b-white cursor-pointer">
+                <img src="./assets/images/icon-instagram.svg" alt="" class="h-7 md:pb-1 md:border-b-2 md:border-b-transparent md:hover:border-b-white cursor-pointer">
+            </div>
+
+            <p class="font-josefin-sans text-base text-dark-gray text-center"> © 2021 Loopstudios. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--Hidden Nav-->
+    <section class="fixed top-0 left-0 z-10 h-[100vh] w-0 overflow-hidden flex flex-col bg-black closed transition-all ease duration-300 sm:w-0 sm:hidden" id="hidden-nav">
+        <div class="flex justify-between mt-12 mx-8">
+            <img src="./assets/images/logo.svg" alt="" class="logo h-6">
+            <img src="./assets/images/icon-close.svg" alt="" class="h-5" id="icon-close">
+        </div>
+
+        <div class="flex flex-col space-y-3 mt-20 mx-8 font-josefin-sans font-[300] text-xl uppercase text-white">
+            <div>ABOUT</div>
+            <div>CAREERS</div>
+            <div>EVENTS</div>
+            <div>PRODUCTS</div>
+            <div>SUPPORT</div>
+        </div>
+    </section>
+
+    <script>
+        const hambg = document.getElementById("hamburger")
+        const iconClose = document.getElementById("icon-close")
+        const hiddenNav = document.getElementById("hidden-nav")
+
+        hambg.addEventListener("click" , () => {
+            if(hiddenNav.classList.contains("closed")){
+                hiddenNav.classList.add("opened")
+                hiddenNav.classList.remove("closed")
+                hiddenNav.style.width = "100vw"
+            }
+        })
+
+        iconClose.addEventListener("click" , () => {
+            if(hiddenNav.classList.contains("opened")){
+                hiddenNav.classList.add("closed")
+                hiddenNav.classList.remove("opened")
+                hiddenNav.style.width = "0"
+            }
+        })
+    </script>
+</body>
